@@ -96,6 +96,8 @@ $(function () {
   });
 
   var query = getQueryParams(document.location.search);
+  console.log(query);
+  
   if (query.error){
     console.log(query.error);
     $('#token').html(query.error);
