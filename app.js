@@ -10,7 +10,7 @@ function testToken() {
     // set token to Authorization header
     $.ajax({
         method: 'GET',
-        url: contentApiEndpoint + '/test-token',
+        url: 'https://cnifbhio41.execute-api.us-east-1.amazonaws.com/dev/test-token',
         headers: {
           Authorization: authorizationToken
         }
@@ -97,7 +97,7 @@ $(function () {
 
   var query = getQueryParams(document.location.search);
   console.log(query);
-  
+
   if (query.error){
     console.log(query.error);
     $('#token').html(query.error);
