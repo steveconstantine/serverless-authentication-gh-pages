@@ -97,6 +97,7 @@ $(function () {
 
   var query = getQueryParams(document.location.search);
   if (query.error){
+    console.log(query.error);
     $('#token').html(query.error);
     localStorage.removeItem('authorization_token');
     localStorage.removeItem('refresh_token');
